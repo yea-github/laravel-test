@@ -27,7 +27,7 @@ class ProductController extends Controller
     public function store(Request $request){
 
         $validator = Validator::make($request->all(),[
-            'name' => 'required|string|max:255',
+                'name' => 'required|string|max:255',
                 'description' => 'required',
                 'price' => 'required|integer'
         ]);
@@ -69,7 +69,7 @@ class ProductController extends Controller
     public function update(Request $request, Product $product){
 
         $validator = Validator::make($request->all(),[
-            'name' => 'required|string|max:255',
+                'name' => 'required|string|max:255',
                 'description' => 'required',
                 'price' => 'required|integer'
         ]);
